@@ -1,4 +1,4 @@
-# Logs
+# Log files
 logs
 *.log
 npm-debug.log*
@@ -7,18 +7,37 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Node modules
+node_modules/
+
+# Build directories
+dist/
+dist-ssr/
+
+# Ignore build output, except for images or other assets you need to include
+# If your images are stored in dist/images or a similar folder, use the following lines:
+!dist/images/
+!dist/images/**/*
+
+# If you use a different directory structure, adjust the path accordingly:
+# For example, if images are in public/images:
+!public/assets/
+!public/assets/**/*
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
