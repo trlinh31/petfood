@@ -14,16 +14,6 @@ node_modules/
 dist/
 dist-ssr/
 
-# Ignore build output, except for images or other assets you need to include
-# If your images are stored in dist/images or a similar folder, use the following lines:
-!dist/images/
-!dist/images/**/*
-
-# If you use a different directory structure, adjust the path accordingly:
-# For example, if images are in public/images:
-!public/assets/
-!public/assets/**/*
-
 # Editor directories and files
 .vscode/
 !.vscode/extensions.json
