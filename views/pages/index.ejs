@@ -27,12 +27,14 @@
     <div class="container">
       <div id="root">
         <% products.forEach(product => { %>
-        <div class="card-item">
-          <img src="<%= product.image_url %>" alt="" />
-          <div class="card-item__content">
-            <h2><%= product.name %></h2>
-            <p>$<%= product.price %></p>
-            <a href="<%= product._id %>">More Info</a>
+        <div class="box">
+          <div class="img-box">
+            <img class="images" src="<%= product.image_url %>" alt="" />
+          </div>
+          <div class="bottom">
+            <p><%= product.name %></p>
+            <h2>$ <%= product.price %></h2>
+            <a href="/<%= product._id %>">More Info </a>
           </div>
         </div>
         <% }); %>
