@@ -3,6 +3,8 @@ const Product = require("../models/products");
 exports.getProducts = async (req, res) => {
   try {
     const products = await Product.find();
+    console.log(products);
+
     res.render("pages/index", { products });
   } catch (error) {
     return res.status(500).json({ status: 500, message: error.message });
